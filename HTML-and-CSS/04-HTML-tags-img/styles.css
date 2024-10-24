@@ -5,3 +5,12 @@ h1 {
 h2 {
     color: blue;
 }
+
+nav {
+    background-color: darkblue;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

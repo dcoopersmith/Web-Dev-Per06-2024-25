@@ -13,11 +13,15 @@ body {
     /* padding: TOP RIGHT BOTTOM LEFT */
 }
 
-
 .fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;    
     background-color: darkred;
+    box-shadow: 2px 2px 2px gray;
 }
-
 
 h1 {
     color: maroon;
@@ -46,4 +50,9 @@ img {
 
     box-shadow: 5px 5px 5px 2px rgba(41, 35, 31, 1);
 
+}
+
+.logo {
+    box-shadow: none;
+    border-color: darkred;
 }

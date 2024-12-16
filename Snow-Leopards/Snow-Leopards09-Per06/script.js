@@ -1,12 +1,22 @@
-let username = "1234";
-let username_hashed = "81dc9bdb52d04dc20036dbd8313ed055";
-let input = prompt("Enter the secret username: ");
+const Questions = [
+    {
+        q: "Fill in the blank: Snow leopards live _____.",
+        a: [{text: "in the desert.", isCorrect: false},
+            {text: "in the jungle.", isCorrect: false},
+            {text: "in the mountains.", isCorrect: true},
+            {text: "in the city.", isCorrect: false},
+           ]
+    },
+    // add more questions here....
+]; 
 
-if ( input === username  )
+let currQuestion = 0;
+let score = 0;
+
+function loadQues() 
 {
-    alert("Yes!! You got it!");
+    const question = document.getElementById("ques");
+    question.textContent = "Palm Middle School";
 }
-else
-{
-    alert("Access denied!");
-}
+
+loadQues();

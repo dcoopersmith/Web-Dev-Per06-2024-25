@@ -51,3 +51,27 @@ function loadQues()
 }
 
 loadQues();
+
+function checkAns()
+{
+    // ToDo: finish this fxn
+}
+
+function loadScore() 
+{
+    const totalScore = document.getElementById("score");
+    // ToDo: finish this later...
+}
+
+function nextQuestion() 
+{
+    if (  currQuestion < Questions.length - 1  )
+    {
+        currQuestion++;
+        loadQues();
+    }
+    else
+    {
+        // ToDo: finish this function...
+    }
+}

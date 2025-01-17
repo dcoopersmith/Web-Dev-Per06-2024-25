@@ -46,15 +46,24 @@ function loadQues()
         choicesDiv.appendChild(choiceLabel);
         opt.appendChild(choicesDiv);
     }
-
-
 }
 
 loadQues();
 
 function checkAns()
 {
-    // ToDo: finish this fxn
+    const selectedAns = parseInt(document.querySelector('input[name="answer"]:checked').value);
+
+    if ( Questions[currQuestion].a[selectedAns].isCorrect  )
+    {
+        score++;
+        console.log("Correct");
+        nextQuestion();
+    }
+    else
+    {
+        nextQuestion();
+    }
 }
 
 function loadScore() 

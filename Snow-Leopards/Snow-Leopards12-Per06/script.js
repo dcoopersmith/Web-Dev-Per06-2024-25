@@ -15,6 +15,22 @@ const Questions = [
             {text: "white dots with black fur.", isCorrect: false},
            ]
     },
+    {
+        q: "Fill in the blank: Snow leopards use their tails for _____.",
+        a: [{text: "balance.", isCorrect: true},
+            {text: "killing their prey.", isCorrect: false},
+            {text: "grabbing objects.", isCorrect: false},
+            {text: "swinging.", isCorrect: false},
+           ]
+    },
+    {
+        q: "Fill in the blank: Snow leopards eat _____.",
+        a: [{text: "frogs.", isCorrect: false},
+            {text: "fish.", isCorrect: false},
+            {text: "lions.", isCorrect: false},
+            {text: "deer.", isCorrect: true},
+           ]
+    },
     
     // add more questions here....
 ]; 
@@ -81,6 +97,9 @@ function nextQuestion()
     }
     else
     {
-        // ToDo: finish this function...
+        // ToDo: remove question, remove options, remove submit button
+        document.getElementById("ques").remove();
+        document.getElementById("opt").remove();
+        document.getElementById("btn").remove();
     }
 }

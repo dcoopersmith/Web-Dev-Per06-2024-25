@@ -47,6 +47,11 @@ img {
     
 }
 
+.genres {
+    color: rgb(63, 31, 158);
+    font-size: 18px;
+}
+
 .logo {
     box-shadow: none;
     border-color: darkred;

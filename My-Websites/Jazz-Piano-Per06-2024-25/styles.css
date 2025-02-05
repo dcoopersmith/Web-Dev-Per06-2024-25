@@ -47,10 +47,6 @@ img {
     
 }
 
-.genres {
-    color: rgb(63, 31, 158);
-    font-size: 18px;
-}
 
 .logo {
     box-shadow: none;
@@ -72,10 +68,32 @@ a:link {
 }
 
 a:visited {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 a:hover {
     color: black;
     font-size: 15px;
+}
+
+.genres {
+    color: rgb(63, 31, 158);
+    text-decoration: none;
+    font: bold 18px "Arial Black", Gadget, sans-serif;
+}
+
+.genres:hover {
+    font-size: 18px;
+}
+
+.genres:link {
+    color: rgb(63, 31, 158);
+}
+
+.genres:visited {
+    color: rgb(63, 31, 158);
+}
+
+li {
+    color: rgb(63, 31, 158);
 }
